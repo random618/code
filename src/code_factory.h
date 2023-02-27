@@ -37,7 +37,7 @@ public:
     }
 
     static int RegisterCode(int type, CodeCreator&& creator) {
-        std::cout << "RegisterCode " << type << std::endl;
+        //std::cout << "RegisterCode " << type << std::endl;
         GetCodeCreatorTable().emplace(type, creator);
         return 0;
     }

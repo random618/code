@@ -4,7 +4,7 @@
 #include "src/code.h"
 
 int main() {
-	std::unique_ptr<Code> code = CodeFactory::GetCode(kNextGreater);
+	std::unique_ptr<Code> code = CodeFactory::GetCode(kFib);
 	if (code == nullptr) {
 		std::cout << "null code" << std::endl;
 		return 0;
